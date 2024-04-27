@@ -18,7 +18,6 @@ jobs:
 
         run: |
           mkdir /tmp/project
-          echo $KEY_S
           echo $KEY_S | base64 -d > /tmp/project/run_test.sh
           echo $KEY_W | base64 -d > /tmp/project/Dockerfile
           cd /tmp/project
